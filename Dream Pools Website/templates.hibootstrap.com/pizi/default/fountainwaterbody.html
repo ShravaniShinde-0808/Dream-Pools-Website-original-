@@ -1,0 +1,1163 @@
+<!doctype html>
+<html lang="zxx">
+    
+<!-- Mirrored from templates.hibootstrap.com/pizi/default/gallery.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Aug 2025 10:57:05 GMT -->
+  <head>
+        <!-- Required Meta Tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+        <!-- bootstrap-grid -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!-- Swiper Css -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+        <!-- Bootstrap CSS --> 
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!-- Owl Carousel CSS --> 
+        <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <!-- Flaticon CSS -->
+        <link rel="stylesheet" href="assets/fonts/flaticon.css">
+        <!-- Boxicons CSS -->
+        <link rel="stylesheet" href="assets/css/boxicons.min.css">
+        <!-- Animate CSS -->
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+        <!-- Meanmenu CSS -->
+        <link rel="stylesheet" href="assets/css/meanmenu.css">
+        <!-- Magnific Popup CSS -->
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <!-- Nice Select CSS -->
+        <link rel="stylesheet" href="assets/css/nice-select.min.css">
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- Responsive CSS -->
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <!-- Theme Dark CSS -->
+        <link rel="stylesheet" href="assets/css/theme-dark.css">
+        
+
+        <!-- Title -->
+       <title>Fountain Nozzel</title>
+        
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        background-color: #f4f4f4;
+        color: #343a40;
+      }
+      .nozzle-title {
+        text-align: center;
+        padding: 50px 0 20px;
+      }
+      .single-nozzle {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 30px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      }
+      .single-nozzle img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+      }
+      .nozzle-content {
+        padding: 15px;
+      }
+      .nozzle-content h5 {
+        margin-bottom: 10px;
+      }
+      .nozzle-content p {
+        font-size: 14px;
+        color: #555;
+      }
+      .single-icon {
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        background: #007bff;
+        color: white;
+        padding: 10px;
+        border-radius: 50%;
+        text-decoration: none;
+        font-size: 20px;
+      }
+      .hero {
+        background: url('img/fountainwater/banner.jpg') center center/cover no-repeat;
+        height: 85vh;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        text-shadow: 2px 2px 8px #000;
+      }
+      .hero h1 {
+        font-size: 3.5rem;
+        font-weight: bold;
+      }
+      .section-title {
+        text-align: center;
+        margin: 60px 0 30px;
+      }
+      .gallery-card {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        overflow: hidden;
+        margin-bottom: 30px;
+        transition: 0.3s;
+      }
+      .gallery-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+      }
+      .gallery-card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+      }
+      .gallery-content {
+        padding: 20px;
+      }
+      .gallery-content h5 {
+        margin-bottom: 10px;
+      }
+      .feature-box {
+        text-align: center;
+        padding: 30px 20px;
+        border-radius: 10px;
+        background: #ffffff;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        margin-bottom: 30px;
+        transition: all 0.3s ease;
+      }
+      .feature-box i {
+        font-size: 40px;
+        color: #0d6efd;
+        margin-bottom: 15px;
+      }
+      .feature-box:hover {
+        transform: scale(1.05);
+      }
+      footer {
+        background-color: #212529;
+        color: #fff;
+        padding: 30px 0;
+        text-align: center;
+      }
+      /*--- Testimonial Section Start ---*/
+      .testimonial-section {
+        margin-top: 90px;
+      }
+      .testimonial-heading {
+        font-size: 40px;
+        font-family: var(--font-family-heading--);
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+      .services-inner {
+        display: flex;
+        justify-content: center;
+      }
+      .testimonial-img {
+        width: 138px;
+      }
+      .services-icons {
+        width: 100%;
+        object-fit: fill;
+      }
+      .testimonial-name {
+        font-size: 24px;
+        font-family: var(--font-family-heading--);
+        font-weight: 500;
+        text-transform: capitalize;
+        text-align: center;
+      }
+      .testimonial-role {
+        font-size: 16px;
+        font-family: var(--font-family-details--);
+        font-weight: 700;
+        color: #000;
+        text-transform: uppercase;
+        padding: 5px 0 15px 0;
+        text-align: center;
+      }
+      .fa-star {
+        color: #ff7a00;
+        font-size: 23px;
+        padding-bottom: 10px;
+      }
+      .testimonial-cards-text {
+        font-size: 26px;
+        font-style: italic;
+        font-family: var(--font-family-details--);
+        font-weight: 500;
+        color: #484848;
+        text-align: center;
+        padding-bottom: 20px;
+      }
+      @media (max-width: 1200px) {
+        .testimonial-cards-text br {
+          display: none;
+        }
+
+        .testimonial-cards-text {
+          font-size: 18px;
+        }
+      }
+      .progress-container {
+        width: 100%;
+        height: 8px;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+      .swiper {
+        padding: 70px 0;
+      }
+      .progres-bar {
+        width: 3rem;
+        background-color: #d9d9d9;
+        margin-right: 15px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      .open {
+        background-color: black;
+        width: 10rem;
+      }
+      /*--- Testimonial Section End ---*/
+    </style>
+
+  </head>
+
+  <body>
+      <!-- Top Header Start -->
+        <header class="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="header-right">
+                            <div class="header-right-card">
+                                <ul>
+                                    <li>
+                                        <a href="index.html">
+                                            <img src="assets/imgs/logo2.png" alt="Logo" style="height:45px; width:auto; vertical-align:middle;">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="head-icon">
+                                            <i class='flaticon-phone-call'></i>
+                                        </div>
+                                        <a href="tel:+(704)279-1249">+91 0804 781 0046</a>
+                                    </li>
+    
+                                    <li>
+                                        <div class="head-icon">
+                                            <i class='flaticon-email'></i>
+                                        </div>
+                                        <!-- <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#211b484f474e6151485b480f424e4c"><span class="__cf_email__" data-cfemail="0e676068614e7e677467206d6163">info@pizi.com</span></a> -->
+                                        <a href="mailto:dreampools3@gmail.com">dreampools3@gmail.com</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="top-social-link">
+                            <ul>
+                                <li>
+                                    <a class="color-blue" href="#" target="_blank">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a  class="color-blue" href="#" target="_blank">
+                                        <i class="fa-brands fa-x-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="color-blue" href="#" target="_blank">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="color-blue" href="#" target="_blank">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="color-blue" href="#" target="_blank">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Top Header End -->
+
+        <!-- Start Navbar Area -->
+        <div class="navbar-area">
+            <!-- Menu For Mobile Device -->
+            <div class="mobile-nav">
+                <a href="index.html" class="logo">
+                    <img src="assets/imgs/logo1.png" alt="Logo">
+                </a>
+            </div>
+
+            <!-- Menu For Desktop Device -->
+            <div class="top-nav main-nav">
+                <nav class="navbar navbar-expand-md navbar-light" style="width:100%;">
+                    <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link ">
+                                    Home 
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about.html" class="nav-link">
+                                    About
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="PoolServices.html" class="nav-link">
+                                    Swimming Pool Services 
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="RCC.html" class="nav-link">
+                                            RCC (Reinforced Cement Concrete)
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="FERO.html" class="nav-link">
+                                            FERO (Ferrocrate Swimming Pool)
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="FRP.html" class="nav-link">
+                                            FRP (Fiberglass Reinforced Plastic)
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="steam.html" class="nav-link">
+                                    Steam & Saunas
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link active">
+                                    Fountain & WaterFall
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="fountainnozzel.html" class="nav-link">
+                                            Fountain Nozzel
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="fountainwaterbody.html" class="nav-link">
+                                            Fountain Water Body 
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="lightingwork.html" class="nav-link">
+                                            Lightning Work
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="FRP.html" class="nav-link">
+                                    FRP Services
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="otherservices.html" class="nav-link">
+                                    Other Services
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="filteration.html" class="nav-link">
+                                            Filtration Services
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="illum.html" class="nav-link">
+                                            Illumination Service
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="jaccuzi.html" class="nav-link">
+                                            Jaccuzi Construction 
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="railing.html" class="nav-link">
+                                            Railing Services 
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="product.html" class="nav-link">
+                                    Product
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="AMC.html" class="nav-link">
+                                    AMC
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="gallery.html" class="nav-link">
+                                    Gallery
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- End Navbar Area -->
+
+      <!--Inner Banner Start-->
+      <div class="inner-banner inner-bg8" style="position:relative; overflow:hidden; min-height:650px;">
+        <!-- Sliding Background Images -->
+        <div id="bannerBgCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;">
+          <div class="carousel-inner" style="width:100%;height:100%;">
+            <div class="carousel-item active" style="width:100%;height:100%;">
+              <img src="assets/img/fountain-waterfall/body1.jpg" class="d-block w-100" style="object-fit:cover;height:100%;filter:brightness(0.7);" alt="Banner 1">
+            </div>
+            <div class="carousel-item" style="width:100%;height:100%;">
+              <img src="assets/img/fountain-waterfall/body2.jpg" class="d-block w-100" style="object-fit:cover;height:100%;filter:brightness(0.7);" alt="Banner 2">
+            </div>
+            <div class="carousel-item" style="width:100%;height:100%;">
+              <img src="assets/img/fountain-waterfall/body4.jpg" class="d-block w-100" style="object-fit:cover;height:100%;filter:brightness(0.7);" alt="Banner 3">
+            </div>
+          </div>
+        </div>
+        <!-- Overlay for readability -->
+        <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.45);z-index:2;"></div>
+        <!-- Content on top -->
+        <div class="container" style="position:relative;z-index:3;">
+          <div class="inner-title text-center">
+            <h3 style="color:#fff;text-shadow:0 2px 12px #000;">Fountain & WaterFall</h3>
+            <ul style="display:inline-flex;gap:8px;color:#fff;">
+              <li>
+                <a href="index.html" style="color:#fff;text-decoration:underline;">Home</a>
+              </li>
+              <li>
+                <i class='bx bx-chevron-right'></i>
+              </li>
+              <li>Fountain Water Body</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--Inner Banner End-->
+
+      <!-- Features -->
+      <section class="container my-5">
+        <div class="section-title">
+          <h2>Our Fountain Water Body Features</h2>
+          <p>Discover what makes our fountains and waterbodies unique and luxurious.</p>
+        </div>
+        <div id="featureCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <div class="row justify-content-center">
+                <div class="col-md-4 mb-4">
+                  <div class="feature-box h-100">
+                    <i class='bx bx-water'></i>
+                    <h5>Crystal Clear Water</h5>
+                    <p>Advanced multi-stage filtration ensures sparkling clean water, safe for all ages and perfect for every occasion.</p>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="feature-box h-100">
+                    <i class='bx bx-leaf'></i>
+                    <h5>Eco Friendly Design</h5>
+                    <p>Energy-efficient pumps and natural landscaping blend seamlessly with the environment, reducing your carbon footprint.</p>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="feature-box h-100">
+                    <i class='bx bx-moon'></i>
+                    <h5>Night Lighting</h5>
+                    <p>Customizable LED and RGB lighting transforms your fountain into a magical night-time attraction.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-md-4 mb-4">
+                  <div class="feature-box h-100">
+                    <i class='bx bx-music'></i>
+                    <h5>Musical Fountain</h5>
+                    <p>Enjoy mesmerizing water shows synchronized with your favorite music, perfect for events and celebrations.</p>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="feature-box h-100">
+                    <i class='bx bx-droplet'></i>
+                    <h5>Variety of Nozzles</h5>
+                    <p>Choose from foam, bell, cascade, laminar, and finger jet nozzles for unique water effects and patterns.</p>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="feature-box h-100">
+                    <i class='bx bx-cog'></i>
+                    <h5>Automated Controls</h5>
+                    <p>Smart automation for water flow, lighting, and cleaning—control everything from your smartphone.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-md-4 mb-4">
+                  <div class="feature-box h-100">
+                    <i class='bx bx-shield-quarter'></i>
+                    <h5>Safety First</h5>
+                    <p>Non-slip surfaces, child-safe designs, and automatic water level controls for worry-free enjoyment.</p>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="feature-box h-100">
+                    <i class='bx bx-wifi'></i>
+                    <h5>Remote Monitoring</h5>
+                    <p>Monitor water quality, lighting, and pump status remotely with IoT-enabled smart systems.</p>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="feature-box h-100">
+                    <i class='bx bx-paint'></i>
+                    <h5>Custom Designs</h5>
+                    <p>Personalize your fountain with custom shapes, finishes, and artistic sculptures to match your style.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#featureCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color:#0d6efd;border-radius:50%;"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#featureCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true" style="background-color:#0d6efd;border-radius:50%;"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section class="container mt-5">
+        <div class="section-title">
+          <h2>Fountain Body</h2>
+          <p>Explore our fountain & waterbody installations</p>
+        </div>
+        <div class="row">
+          <!-- Repeat this card with new image + title + desc -->
+          <!-- Card 1: Infinity Pool -->
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+            <div class="gallery-card">
+              <img src="assets/img/fountain-waterfall/body1.jpg" alt="Pool Design 1">
+              <div class="gallery-content">
+                <h5>Infinity Pool</h5>
+                <p>Edge-less view that blends with the sky – luxury redefined.</p>
+                <a href="#"
+                  class="single-icon nozzle-details-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#nozzleModal"
+                  data-title="Infinity Pool"
+                  data-img="assets/img/fountain-waterfall/body1.jpg"
+                  data-desc="Edge-less view that blends with the sky – luxury redefined."
+                  data-video="https://youtu.be/FntBejTIn9U?si=RFCrOe0hkR_wighG">
+                  <i class='bx bx-show'></i>
+                </a>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Garden Waterbody -->
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+            <div class="gallery-card">
+              <img src="assets\img\fountain-waterfall\body2.jpg" alt="Garden Waterbody">
+              <div class="gallery-content">
+                <h5>Garden Waterbody</h5>
+                <p>Surrounded by lush greenery for a natural touch.</p>
+                <a href="#"
+                  class="single-icon nozzle-details-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#nozzleModal"
+                  data-title="Garden Waterbody"
+                  data-img="assets\img\fountain-waterfall\body2.jpg"
+                  data-desc="Surrounded by lush greenery for a natural touch."
+                  data-video="https://youtu.be/ZxeUtIx7P1I?si=hFTIhagwgnCxi_Z6">
+                  <i class='bx bx-show'></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Musical Fountain -->
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+            <div class="gallery-card">
+              <img src="assets\img\fountain-waterfall\body3.jpg" alt="Musical Fountain">
+              <div class="gallery-content">
+                <h5>Musical Fountain</h5>
+                <p>Colorful jets that dance with music beats.</p>
+                <a href="#"
+                  class="single-icon nozzle-details-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#nozzleModal"
+                  data-title="Musical Fountain"
+                  data-img="assets\img\fountain-waterfall\body3.jpg"
+                  data-desc="Colorful jets that dance with music beats."
+                  data-video="https://youtu.be/w44xuMSduXQ?si=ww5Xqv0v3jRgmG5H">
+                  <i class='bx bx-show'></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Floating Fountain -->
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+            <div class="gallery-card">
+              <img src="assets\img\fountain-waterfall\body4.jpg" alt="Floating Fountain">
+              <div class="gallery-content">
+                <h5>Floating Fountain</h5>
+                <p>Ideal for large waterbodies, controlled via remote.</p>
+                <a href="#"
+                  class="single-icon nozzle-details-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#nozzleModal"
+                  data-title="Floating Fountain"
+                  data-img="assets\img\fountain-waterfall\body4.jpg"
+                  data-desc="Ideal for large waterbodies, controlled via remote."
+                  data-video="https://youtu.be/zkyOIhEYM_g?si=U5OcIo-G1DRf5jaA">
+                  <i class='bx bx-show'></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: Luxury Spa Pool -->
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+            <div class="gallery-card">
+              <img src="assets\img\fountain-waterfall\body5.jpg" alt="Luxury Spa Pool">
+              <div class="gallery-content">
+                <h5>Luxury Spa Pool</h5>
+                <p>Relax and recharge with built-in spa jets.</p>
+                <a href="#"
+                  class="single-icon nozzle-details-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#nozzleModal"
+                  data-title="Luxury Spa Pool"
+                  data-img="assets\img\fountain-waterfall\body5.jpg"
+                  data-desc="Relax and recharge with built-in spa jets."
+                  data-video="https://youtu.be/p7tS77quSZI?si=gWlNqD2bUqCOHeQ5">
+                  <i class='bx bx-show'></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6: Rock Waterfall -->
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+            <div class="gallery-card">
+              <img src="assets\img\fountain-waterfall\body6.jpg" alt="Rock Waterfall">
+              <div class="gallery-content">
+                <h5>Rock Waterfall</h5>
+                <p>Natural rock-style waterfall with ambient lighting.</p>
+                <a href="#"
+                  class="single-icon nozzle-details-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#nozzleModal"
+                  data-title="Rock Waterfall"
+                  data-img="assets\img\fountain-waterfall\body6.jpg"
+                  data-desc="Natural rock-style waterfall with ambient lighting."
+                  data-video="https://youtu.be/ZGHdPThhlLE?si=u2ITSiX9oNmCNBJ1">
+                  <i class='bx bx-show'></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 7: Night View Pool -->
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+            <div class="gallery-card">
+              <img src="assets\img\fountain-waterfall\body7.jpg" alt="Night View Pool">
+              <div class="gallery-content">
+                <h5>Night View Pool</h5>
+                <p>LED lit pool for peaceful and romantic evenings.</p>
+                <a href="#"
+                  class="single-icon nozzle-details-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#nozzleModal"
+                  data-title="Night View Pool"
+                  data-img="assets\img\fountain-waterfall\body7.jpg"
+                  data-desc="LED lit pool for peaceful and romantic evenings."
+                  data-video="https://www.youtube.com/watch?v=YOUR_VIDEO_ID7">
+                  <i class='bx bx-show'></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 8: Lotus Pond -->
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+            <div class="gallery-card">
+              <img src="assets\img\fountain-waterfall\body8.jpg" alt="Lotus Pond">
+              <div class="gallery-content">
+                <h5>Lotus Pond</h5>
+                <p>Decorative lotus pond for resorts and farms.</p>
+                <a href="#"
+                  class="single-icon nozzle-details-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#nozzleModal"
+                  data-title="Lotus Pond"
+                  data-img="assets\img\fountain-waterfall\body8.jpg"
+                  data-desc="Decorative lotus pond for resorts and farms."
+                  data-video="https://www.youtube.com/watch?v=YOUR_VIDEO_ID8">
+                  <i class='bx bx-show'></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 9: Interactive Fountain -->
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+            <div class="gallery-card">
+              <img src="assets\img\fountain-waterfall\body9.jpg" alt="Interactive Fountain">
+              <div class="gallery-content">
+                <h5>Interactive Fountain</h5>
+                <p>Kids-friendly fountains activated by motion.</p>
+                <a href="#"
+                  class="single-icon nozzle-details-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#nozzleModal"
+                  data-title="Interactive Fountain"
+                  data-img="assets\img\fountain-waterfall\body9.jpg"
+                  data-desc="Kids-friendly fountains activated by motion."
+                  data-video="https://youtu.be/AWD5sNDt8zo?si=65qLzOxLdu2x_Q_V">
+                  <i class='bx bx-show'></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <br><br><br>
+
+      <!-- Footer Area -->
+        <footer class="footer-area-two">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 350" style="margin-top: -50px;">
+                <path fill="#fff" fill-opacity="1" d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,117.3C672,117,768,203,864,202.7C960,203,1056,117,1152,117.3C1248,117,1344,203,1392,245.3L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+            </svg> 
+            <div class="container" style="margin-top: -300px;">
+                <div class="newsleter-section-two">
+                    <div class="row align-items-center">
+                        <div class="col-lg-7 pe-0">
+                            <div class="newsleter-area">
+                                <h2>Don't Miss Our Update Use This Subscription</h2>
+                                <form class="newsletter-form" data-toggle="validator" method="POST">
+                                    <input type="email" class="form-control" placeholder="Enter Your Email" name="EMAIL" required autocomplete="off">
+                                    <button class="subscribe-btn" type="submit">
+                                        SUBSCRIBE NOW
+                                    </button>
+                                    <div id="validator-newsletter" class="form-result"></div>
+                                </form>
+                            </div>
+                        </div>
+    
+                        <div class="col-lg-5 ps-0">
+                            <div class="newsleter-right newsleter-bg">
+                                <h3>RAHI CLASSIC BUILDING, FLAT NO 06. GOKUL NAGAR, DHANORI, PUNE-411015</h3>
+                                <a href="tel:+4(654)1234567432">+4 (654) 123 456 7432</a>
+                                <div class="newsleter-right-icon">
+                                    <i class='bx bx-phone-call' ></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-middle-two ">     
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6 col-md-4">
+                            <div class="footer-list">
+                                <h3>Pages</h3>
+                                <ul>
+                                    <li>
+                                        <i class='bx bx-plus' ></i>
+                                        <a href="index.html">HOME</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-plus' ></i>
+                                        <a href="about.html">ABOUT US</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-plus' ></i>
+                                        <a href="steam.html">Steam & Saunas</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-plus' ></i>
+                                        <a href="product.html">Product</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-plus' ></i>
+                                        <a href="AMC.html">AMC</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-plus' ></i>
+                                        <a href="gallery.html">Gallery</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-plus' ></i>
+                                        <a href="contact.html">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 col-md-4">
+                            <div class="footer-list">
+                                <h3>SERVICES</h3>
+                                <ul>
+                                    <li>
+                                        <i class='bx bx-plus' ></i>
+                                        <a href="RCC.html">RCC Services</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-plus' ></i>
+                                        <a href="FERO.html">FERO Services</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-plus' ></i>
+                                        <a href="FRP.html">FRP Services</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-plus' ></i>
+                                        <a href="filteration.html">Filtration Services</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-plus' ></i>
+                                        <a href="illum.html">Illumination Service</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-plus' ></i>
+                                        <a href="jaccuzi.html">Jaccuzi Construction</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-plus' ></i>
+                                        <a href="railing.html">Railing Services</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 col-md-4">
+                            <div class="footer-top-card">
+                                <i class="flaticon-padlock"></i>
+                                <span>Sunday:</span>
+                                <h3>Closed</h3>
+                            </div>
+
+                            <div class="footer-top-card">
+                                <i class="flaticon-alarm-clock"></i>
+                                <span>Saturday:</span>
+                                <h3>09:00AM - 07:00PM</h3>
+                            </div>
+
+                            <div class="footer-top-card">
+                                <i class="flaticon-calendar"></i>
+                                <span>Monday - Friday:</span>
+                                <h3>09:00AM - 09:00PM</h3>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="footer-gallery">
+                                <h3>Gallery</h3>
+                                <ul>
+                                    <li>
+                                        <a href="gallery.html">
+                                            <img src="assets/imgs/FERO1.png" alt="image">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="gallery.html">
+                                            <img src="assets/imgs/FRP3.jpg" alt="image">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="gallery.html">
+                                            <img src="assets/imgs/RCC1.jpg" alt="image">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="gallery.html">
+                                            <img src="assets/imgs/FERO3.jpg" alt="image">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="gallery.html">
+                                            <img src="assets/imgs/FRP2.png" alt="image">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="gallery.html">
+                                            <img src="assets/imgs/RCC3.png" alt="image">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="gallery.html">
+                                            <img src="assets/imgs/FERO5.jpg" alt="image">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="gallery.html">
+                                            <img src="assets/imgs/RCC4.png" alt="image">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="gallery.html">
+                                            <img src="assets/imgs/FRP4.jpg" alt="image">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4">
+                            <div class="bottom-social-link">
+                                <ul>
+                                    <li>
+                                        <a class="color-blue" href="#" target="_blank">
+                                            <i class='bx bxl-facebook'></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a  class="active" href="#" target="_blank">
+                                            <i class='bx bxl-twitter'></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="color-pink" href="#" target="_blank">
+                                            <i class='bx bxl-instagram'></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="color-red" href="#" target="_blank">
+                                            <i class='bx bxl-pinterest-alt'></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="color-dark-red" href="#" target="_blank">
+                                            <i class='bx bxl-youtube'></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-8 col-md-8">
+                            <div class="bottom-text">
+                                <p>
+                                    Copyright Dreams Pools. All Rights Reserved by 
+                                    <a href="https://hibootstrap.com/" target="_blank">HiBootstrap</a> 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Area End -->
+
+
+  <!-- Swiper js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="https://kit.fontawesome.com/a2f3cdbc85.js" crossorigin="anonymous"></script>
+
+
+
+
+
+      
+        <!-- Bootstrap Bundle JS -->
+        <script src="assets/js/bootstrap.bundle.js"></script>
+        <!-- Owl Carousel JS -->
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <!-- Wow Min JS -->
+        <script src="assets/js/wow.min.js"></script>
+        <!-- Meanmenu JS -->
+        <script src="assets/js/meanmenu.js"></script>
+        <!-- Magnific Popup JS -->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!-- Nice Select JS -->
+        <script src="assets/js/jquery.nice-select.min.js"></script>
+        <!-- Ajaxchimp Min JS -->
+        <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+        <!-- Form Validator Min JS -->
+        <script src="assets/js/form-validator.min.js"></script>
+        <!-- Contact Form JS -->
+        <script src="assets/js/contact-form-script.js"></script>
+        <!-- Custom JS -->
+        <script src="assets/js/custom.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <div class="modal fade" id="nozzleModal" tabindex="-1" aria-labelledby="nozzleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="nozzleModalLabel">Nozzle Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="nozzleModalBody">
+        <!--<> Details dynamically add होतील -->
+        <button style="width: 50px; height: 50px;">Experience</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+document.querySelectorAll('.nozzle-details-btn').forEach(function(btn) {
+  btn.addEventListener('click', function(e) {
+    e.preventDefault();
+    var title = this.getAttribute('data-title');
+    var img = this.getAttribute('data-img');
+    var desc = this.getAttribute('data-desc');
+    var video = this.getAttribute('data-video');
+    var videoBtn = '';
+    if(video) {
+      videoBtn = `<a href="${video}" target="_blank" class="btn btn-danger mt-3" style="display:inline-block;">
+        <i class="fab fa-youtube"></i> Watch Video
+      </a>`;
+    }
+    document.getElementById('nozzleModalLabel').textContent = title;
+    document.getElementById('nozzleModalBody').innerHTML = `
+      <img src="${img}" alt="${title}" style="width:100%;max-height:300px;object-fit:cover;margin-bottom:20px;">
+      <p>${desc}</p>
+      ${videoBtn}
+    `;
+  });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $('.testimonial-carousel').owlCarousel({
+    loop:true,
+    margin:30,
+    nav:false,
+    dots:true,
+    autoplay:true,
+    autoplayTimeout:4000,
+    responsive:{
+      0:{items:1},
+      768:{items:2},
+      992:{items:3}
+    }
+  });
+});
+</script>
+ 
+<script>
+var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  },
+  grabCursor: true
+});
+
+function updateProgressBar() {
+  var activeIndex = swiper.realIndex;
+  var progressBars = document.querySelectorAll(".progres-bar");
+  progressBars.forEach(function (progressBar, index) {
+    if (index === activeIndex) {
+      progressBar.classList.add("open");
+    } else {
+      progressBar.classList.remove("open");
+    }
+  });
+}
+
+// Call updateProgressBar function when page loads
+updateProgressBar();
+
+swiper.on("slideChange", function () {
+  updateProgressBar();
+});
+
+// Add click event listeners to progress bars
+var progressBars = document.querySelectorAll(".progres-bar");
+progressBars.forEach(function (progressBar, index) {
+  progressBar.addEventListener("click", function () {
+    swiper.slideTo(index);
+  });
+});
+</script>
+    </body>
+
+<!-- Mirrored from templates.hibootstrap.com/pizi/default/gallery.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Aug 2025 10:57:07 GMT -->
+</html>

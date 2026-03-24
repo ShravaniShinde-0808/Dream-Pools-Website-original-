@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dream Pools - Lighting Work</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!--faicon-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Bootstrap CSS --> 
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!-- Owl Carousel CSS --> 
+        <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <!-- Flaticon CSS -->
+        <link rel="stylesheet" href="assets/fonts/flaticon.css">
+        <!-- Boxicons CSS -->
+        <link rel="stylesheet" href="assets/css/boxicons.min.css">
+        <!-- Animate CSS -->
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+        <!-- Meanmenu CSS -->
+        <link rel="stylesheet" href="assets/css/meanmenu.css">
+        <!-- Magnific Popup CSS -->
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <!-- Nice Select CSS -->
+        <link rel="stylesheet" href="assets/css/nice-select.min.css">
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- Responsive CSS -->
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <!-- Theme Dark CSS -->
+        <link rel="stylesheet" href="assets/css/theme-dark.css">
+        
+
+
+
+  <style>
+.icon-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #2575fc;
+  color: #fff !important;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 16px;
+  transition: background 0.2s;
+}
+.icon-circle:hover {
+  background: #174ea6;
+  color: #fff !important;
+}
+.top-header a {
+  color: #2575fc;
+  text-decoration: none;
+}
+.top-header a:hover {
+  text-decoration: underline;
+}
+
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+
+.testimonial p {
+  font-size: 1.1rem;
+  color: #444;
+  font-style: italic;
+}
+.testimonial img {
+  border: 4px solid #0077b6;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #0077b6;
+  border-radius: 50%;
+}
+
+/* Animation */
+    @keyframes slideRight {
+    from {transform: translateX(100px); opacity: 0;}
+  to {transform: translateX(0); opacity: 1;}
+    }
+    @keyframes fadeIn {
+     from {opacity: 0; transform: translateY(30px);}
+  to {opacity: 1; transform: translateY(0);}
+    }
+    .slide-right {
+      animation: slideRight 1s ease-out;
+    }
+    .fade-in {
+      animation: fadeIn 1.2s ease-in;
+    }
+    body {
+      background-color: #f4f4f4;
+    }
+
+    /* ====== Image Hover Effects ====== */
+    .img-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .img-card img {
+      transition: transform 0.6s ease;
+    }
+
+    .img-card:hover img {
+      transform: scale(1.1);
+    }
+
+    .img-card::after {
+      content: "View More";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0.8);
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      padding: 6px 14px;
+      font-size: 14px;
+      border-radius: 5px;
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+
+    .img-card:hover::after {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+     h2,
+    h3 {
+      font-weight: bold;
+      color: #333;
+    }
+
+    /* ====== Video Styling ====== */
+    .video-wrapper {
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+</style>
+</head>
+
+<body>
+
+
+
+<body style="background-color:#f4f4f4;">
+
+        <!-- Top Header Start -->
+        <header class="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="header-right">
+                            <div class="header-right-card">
+                                <ul>
+                                    <li>
+                                        <a href="index.html">
+                                            <img src="assets/imgs/logo2.png" alt="Logo" style="height:45px; width:auto; vertical-align:middle;">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="head-icon">
+                                            <i class='flaticon-phone-call'></i>
+                                        </div>
+                                        <a href="tel:+(704)279-1249">+91 0804 781 0046</a>
+                                    </li>
+    
+                                    <li>
+                                        <div class="head-icon">
+                                            <i class='flaticon-email'></i>
+                                        </div>
+                                        <!-- <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#211b484f474e6151485b480f424e4c"><span class="__cf_email__" data-cfemail="0e676068614e7e677467206d6163">info@pizi.com</span></a> -->
+                                        <a href="mailto:dreampools3@gmail.com">dreampools3@gmail.com</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="top-social-link">
+                            <ul>
+                                <li>
+                                    <a class="color-blue" href="#" target="_blank">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a  class="color-blue" href="#" target="_blank">
+                                        <i class="fa-brands fa-x-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="color-blue" href="#" target="_blank">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="color-blue" href="#" target="_blank">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="color-blue" href="#" target="_blank">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Top Header End -->
+
+        <!-- Start Navbar Area -->
+        <div class="navbar-area">
+            <!-- Menu For Mobile Device -->
+            <div class="mobile-nav">
+                <a href="index.html" class="logo">
+                    <img src="assets/imgs/logo1.png" alt="Logo">
+                </a>
+            </div>
+
+            <!-- Menu For Desktop Device -->
+            <div class="top-nav main-nav">
+                <nav class="navbar navbar-expand-md navbar-light" style="width:100%;">
+                    <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link ">
+                                    Home 
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about.html" class="nav-link">
+                                    About
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="PoolServices.html" class="nav-link">
+                                    Swimming Pool Services 
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="RCC.html" class="nav-link">
+                                            RCC (Reinforced Cement Concrete)
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="FERO.html" class="nav-link">
+                                            FERO (Ferrocrate Swimming Pool)
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="FRP.html" class="nav-link">
+                                            FRP (Fiberglass Reinforced Plastic)
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="steam.html" class="nav-link">
+                                    Steam & Saunas
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    Fountain & WaterFall
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="fountainnozzel.html" class="nav-link">
+                                            Fountain Nozzel
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="fountainwaterbody.html" class="nav-link">
+                                            Fountain Water Body 
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="lightingwork.html" class="nav-link">
+                                            Lightning Work
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="FRP.html" class="nav-link">
+                                    FRP Services
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="otherservices.html" class="nav-link active">
+                                    Other Services
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="filteration.html" class="nav-link">
+                                            Filtration Services
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="illum.html" class="nav-link">
+                                            Illumination Service
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="jaccuzi.html" class="nav-link">
+                                            Jaccuzi Construction 
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="railing.html" class="nav-link">
+                                            Railing Services 
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="product.html" class="nav-link">
+                                    Product
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="AMC.html" class="nav-link">
+                                    AMC
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="gallery.html" class="nav-link">
+                                    Gallery
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- End Navbar Area -->
+
+
+<!-- Add this to your <style> section or inside <style> in <head> -->
+
+   <!-- Inner Banner -->
+        <div class="inner-banner inner-bg7">
+            <div class="container">
+                <div class="inner-title text-center">
+                    <h3>Illumination Service</h3>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <i class='bx bx-chevron-right'></i>
+                        </li>
+                        <li>Illumination Service</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Inner Banner End -->
+
+          
+
+   
+
+  <!-- Gallery Section -->
+  <section class="container py-5">
+    <h2 class="text-center section-title mb-4" data-aos="fade-up">Our Illumination</h2>
+    <div class="row">
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="img-card">
+          <img src="assets/imgs/i5.jpeg" class="w-100" alt="Lighting 1">
+          <div class="p-3">
+            <h5>Underwater Lights</h5>
+            <p>Soft lights that dance under the surface for evening ambiance.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="img-card">
+          <img src="assets/imgs/i2.jpeg" class="w-100" alt="Lighting 2" style="height: 270px;">
+          <div class="p-3">
+            <h5>Color-Changing LEDs</h5>
+            <p>Customize colors based on occasion or mood with a remote.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+        <div class="img-card">
+          <img src="assets/imgs/i4.jpeg" class="w-100" alt="Lighting 3" style="height: 270px;">
+          <div class="p-3">
+            <h5>Fountain Illumination</h5>
+            <p>Highlight flowing water with RGB lighting effects.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Heading -->
+<div class="text-center my-5">
+  <h2>Our Amazing Services</h2>
+</div>
+
+<!-- 4 Images Row -->
+<div class="container my-5">
+  <div class="row text-center slide-right">
+    <div class="col-md-3"><img src="assets/imgs/i7.jpeg" class="img-fluid rounded"></div>
+    <div class="col-md-3"><img src="assets/imgs/i8.jpeg" class="img-fluid rounded"></div>
+    <div class="col-md-3"><img src="assets/imgs/i4.jpeg" class="img-fluid rounded"></div>
+    <div class="col-md-3"><img src="assets/imgs/i2.jpeg" class="img-fluid rounded"></div>
+  </div>
+</div>
+
+<!-- Video and Description -->
+<div class="container my-5 fade-in">
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <video width="100%" controls>
+        <source src="sample-video.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="col-md-6">
+      <h3>About Our Work</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ultrices purus at velit vehicula, a malesuada nulla blandit. Sed porttitor, sapien in bibendum luctus, turpis libero vehicula nisl, at placerat sapien eros sed justo.</p>
+    </div>
+  </div>
+</div>
+<!-- Gallery -->
+<div class="container my-5">
+  <h3 class="text-center mb-4">Gallery</h3>
+  <div class="row g-3 fade-in">
+    <div class="col-md-4"><img src="assets/imgs/i5.jpeg" class="img-fluid rounded"></div>
+    <div class="col-md-4"><img src="assets/imgs/i4.jpeg" class="img-fluid rounded"></div>
+    <div class="col-md-4"><img src="assets/imgs/f2.jpeg" class="img-fluid rounded"></div>
+    <div class="col-md-4"><img src="assets/imgs/i7.jpeg" class="img-fluid rounded"></div>
+    <div class="col-md-4"><img src="assets/imgs/i8.jpeg" class="img-fluid rounded"></div>
+    <div class="col-md-4"><img src="assets/imgs/i2.jpeg" class="img-fluid rounded"></div>
+  </div>
+</div>
+
+<br><br><br>
+
+
+
+  
+
+      <!-- Carousel controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Extra Styling -->
+
+<!-- Footer Area -->
+        <footer class="footer-area-two">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 330">
+                <path fill="#fff" fill-opacity="1" d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,117.3C672,117,768,203,864,202.7C960,203,1056,117,1152,117.3C1248,117,1344,203,1392,245.3L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+            </svg> 
+            <div class="container" style="margin-top: -300px;">
+                <div class="newsleter-section-two">
+                    <div class="row align-items-center">
+                        <div class="col-lg-7 pe-0">
+                            <div class="newsleter-area">
+                                <h2>Don't Miss Our Update Use This Subscription</h2>
+                                <form class="newsletter-form" data-toggle="validator" method="POST">
+                                    <input type="email" class="form-control" placeholder="Enter Your Email" name="EMAIL" required autocomplete="off">
+                                    <button class="subscribe-btn" type="submit">
+                                        SUBSCRIBE NOW
+                                    </button>
+                                    <div id="validator-newsletter" class="form-result"></div>
+                                </form>
+                            </div>
+                        </div>
+    
+                        <div class="col-lg-5 ps-0">
+                            <div class="newsleter-right newsleter-bg">
+                                <h3>RAHI CLASSIC BUILDING, FLAT NO 06. GOKUL NAGAR, DHANORI, PUNE-411015</h3>
+                                <a href="tel:+4(654)1234567432">+4 (654) 123 456 7432</a>
+                                <div class="newsleter-right-icon">
+                                    <i class='bx bx-phone-call' ></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-middle-two ">     
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6 col-md-4">
+                            <div class="footer-list">
+                                <h3>Pages</h3>
+                                <ul>
+                                    <li>
+                                        <i class='bx bx-plus' ></i>
+                                        <a href="index.html">HOME</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-plus' ></i>
+                                        <a href="about.html">ABOUT US</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-plus' ></i>
+                                        <a href="steam.html">Steam & Saunas</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-plus' ></i>
+                                        <a href="product.html">Product</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-plus' ></i>
+                                        <a href="AMC.html">AMC</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-plus' ></i>
+                                        <a href="gallery.html">Gallery</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-plus' ></i>
+                                        <a href="contact.html">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 col-md-4">
+                            <div class="footer-list">
+                                <h3>SERVICES</h3>
+                                <ul>
+                                    <li>
+                                        <i class='bx bx-plus' ></i>
+                                        <a href="RCC.html">RCC Services</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-plus' ></i>
+                                        <a href="FERO.html">FERO Services</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-plus' ></i>
+                                        <a href="FRP.html">FRP Services</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-plus' ></i>
+                                        <a href="filteration.html">Filtration Services</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-plus' ></i>
+                                        <a href="illum.html">Illumination Service</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-plus' ></i>
+                                        <a href="jaccuzi.html">Jaccuzi Construction</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-plus' ></i>
+                                        <a href="railing.html">Railing Services</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 col-md-4">
+                            <div class="footer-top-card">
+                                <i class="flaticon-padlock"></i>
+                                <span>Sunday:</span>
+                                <h3>Closed</h3>
+                            </div>
+
+                            <div class="footer-top-card">
+                                <i class="flaticon-alarm-clock"></i>
+                                <span>Saturday:</span>
+                                <h3>09:00AM - 07:00PM</h3>
+                            </div>
+
+                            <div class="footer-top-card">
+                                <i class="flaticon-calendar"></i>
+                                <span>Monday - Friday:</span>
+                                <h3>09:00AM - 09:00PM</h3>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="footer-gallery">
+                                <h3>Gallery</h3>
+                                <ul>
+                                    <li>
+                                        <a href="gallery.html">
+                                            <img src="assets/imgs/FERO1.png" alt="image">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="gallery.html">
+                                            <img src="assets/imgs/FRP3.jpg" alt="image">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="gallery.html">
+                                            <img src="assets/imgs/RCC1.jpg" alt="image">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="gallery.html">
+                                            <img src="assets/imgs/FERO3.jpg" alt="image">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="gallery.html">
+                                            <img src="assets/imgs/FRP2.png" alt="image">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="gallery.html">
+                                            <img src="assets/imgs/RCC3.png" alt="image">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="gallery.html">
+                                            <img src="assets/imgs/FERO5.jpg" alt="image">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="gallery.html">
+                                            <img src="assets/imgs/RCC4.png" alt="image">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="gallery.html">
+                                            <img src="assets/imgs/FRP4.jpg" alt="image">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4">
+                            <div class="bottom-social-link">
+                                <ul>
+                                    <li>
+                                        <a class="color-blue" href="#" target="_blank">
+                                            <i class='bx bxl-facebook'></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a  class="active" href="#" target="_blank">
+                                            <i class='bx bxl-twitter'></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="color-pink" href="#" target="_blank">
+                                            <i class='bx bxl-instagram'></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="color-red" href="#" target="_blank">
+                                            <i class='bx bxl-pinterest-alt'></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="color-dark-red" href="#" target="_blank">
+                                            <i class='bx bxl-youtube'></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-8 col-md-8">
+                            <div class="bottom-text">
+                                <p>
+                                    Copyright Dreams Pools. All Rights Reserved by 
+                                    <a href="https://hibootstrap.com/" target="_blank">HiBootstrap</a> 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Area End -->
+
+
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
+
+
+<!-- Bootstrap Bundle JS -->
+       
+        <!-- Owl Carousel JS -->
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <!-- Wow Min JS -->
+        <script src="assets/js/wow.min.js"></script>
+        <!-- Meanmenu JS -->
+        <script src="assets/js/meanmenu.js"></script>
+        <!-- Magnific Popup JS -->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!-- Nice Select JS -->
+        <script src="assets/js/jquery.nice-select.min.js"></script>
+        <!-- Ajaxchimp Min JS -->
+        <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+        <!-- Form Validator Min JS -->
+        <script src="assets/js/form-validator.min.js"></script>
+        <!-- Contact Form JS -->
+        <script src="assets/js/contact-form-script.js"></script>
+        <!-- Custom JS -->
+        <script src="assets/js/custom.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        
+</body>
+
+</html>

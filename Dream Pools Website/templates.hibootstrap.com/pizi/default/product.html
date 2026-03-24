@@ -1,0 +1,976 @@
+<!doctype html>
+<html lang="zxx">
+    
+<!-- Mirrored from templates.hibootstrap.com/pizi/default/shop.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Aug 2025 10:57:11 GMT -->
+<head>
+        <!-- Required Meta Tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Bootstrap CSS --> 
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!-- Owl Carousel CSS --> 
+        <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <!-- Flaticon CSS -->
+        <link rel="stylesheet" href="assets/fonts/flaticon.css">
+        <!-- Boxicons CSS -->
+        <link rel="stylesheet" href="assets/css/boxicons.min.css">
+        <!-- Animate CSS -->
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+        <!-- Meanmenu CSS -->
+        <link rel="stylesheet" href="assets/css/meanmenu.css">
+        <!-- Magnific Popup CSS -->
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <!-- Nice Select CSS -->
+        <link rel="stylesheet" href="assets/css/nice-select.min.css">
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- Responsive CSS -->
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <!-- Theme Dark CSS -->
+        <link rel="stylesheet" href="assets/css/theme-dark.css">
+        
+        <!--faicon-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Title -->
+       <title>Pizi - Swimming Pool Services HTML Template</title>
+        
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+        <link rel="stylesheet" href="Animated.css">
+
+        <style>
+body {
+            background-color: #f8faff;
+            font-family: Arial, sans-serif;
+        }
+        h2.section-title {
+            font-weight: 700;
+            background: linear-gradient(90deg, #007bff, #00c6ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+            display: inline-block;
+        }
+        h2.section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 3px;
+            width: 60%;
+            background: linear-gradient(90deg, #007bff, #00c6ff);
+            border-radius: 3px;
+        }
+
+      
+        .single-product {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            transition: all 0.3s ease-in-out;
+            position: relative;
+        }
+        .single-product img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+        .single-product:hover img {
+            transform: scale(1.05);
+        }
+        .product-content {
+            padding: 15px;
+            text-align: center;
+        }
+        .product-content h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .product-content .price {
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+        .product-content a.btn-cart {
+            background: #007bff;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .product-content a.btn-cart:hover {
+            background: #0056b3;
+        }
+
+       
+        .quick-view {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(0,0,0,0.5);
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s ease;
+        }
+        .single-product:hover .quick-view {
+            opacity: 1;
+        }
+        .quick-view a {
+            background: #fff;
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-weight: bold;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        
+        .why-choose {
+            background: linear-gradient(135deg, #e6f0ff, #f0faff);
+            padding: 50px 20px;
+            border-radius: 15px;
+            margin-top: 50px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .why-choose h4 {
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+        .why-choose li {
+            font-size: 17px;
+            margin-bottom: 10px;
+        }
+        .why-choose img {
+            border-radius: 10px;
+            max-height: 250px;
+            object-fit: cover;
+        }
+
+        </style>
+    </head>
+    <body>
+
+        <!-- Preloader -->
+        <div class="preloader">
+            <div class="d-table">
+                <div class="d-table-cell">
+                    <div class="spinner">
+                        <div class="circle1"></div>
+                        <div class="circle2"></div>
+                        <div class="circle3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Preloader -->
+        
+        <!-- Top Header Start -->
+        <header class="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="header-right">
+                            <div class="header-right-card">
+                                <ul>
+                                    <li>
+                                        <a href="index.html">
+                                            <img src="assets/imgs/logo2.png" alt="Logo" style="height:45px; width:auto; vertical-align:middle;">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="head-icon">
+                                            <i class='flaticon-phone-call'></i>
+                                        </div>
+                                        <a href="tel:+(704)279-1249">+91 0804 781 0046</a>
+                                    </li>
+    
+                                    <li>
+                                        <div class="head-icon">
+                                            <i class='flaticon-email'></i>
+                                        </div>
+                                        <!-- <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#211b484f474e6151485b480f424e4c"><span class="__cf_email__" data-cfemail="0e676068614e7e677467206d6163">info@pizi.com</span></a> -->
+                                        <a href="mailto:dreampools3@gmail.com">dreampools3@gmail.com</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="top-social-link">
+                            <ul>
+                                <li>
+                                    <a class="color-blue" href="#" target="_blank">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a  class="color-blue" href="#" target="_blank">
+                                        <i class="fa-brands fa-x-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="color-blue" href="#" target="_blank">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="color-blue" href="#" target="_blank">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="color-blue" href="#" target="_blank">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Top Header End -->
+
+        <!-- Start Navbar Area -->
+        <div class="navbar-area">
+            <!-- Menu For Mobile Device -->
+            <div class="mobile-nav">
+                <a href="index.html" class="logo">
+                    <img src="assets/imgs/logo1.png" alt="Logo">
+                </a>
+            </div>
+
+            <!-- Menu For Desktop Device -->
+            <div class="top-nav main-nav">
+                <nav class="navbar navbar-expand-md navbar-light" style="width:100%;">
+                    <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link ">
+                                    Home 
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about.html" class="nav-link">
+                                    About
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="PoolServices.html" class="nav-link">
+                                    Swimming Pool Services 
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="RCC.html" class="nav-link">
+                                            RCC (Reinforced Cement Concrete)
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="FERO.html" class="nav-link">
+                                            FERO (Ferrocrate Swimming Pool)
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="FRP.html" class="nav-link">
+                                            FRP (Fiberglass Reinforced Plastic)
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="steam.html" class="nav-link">
+                                    Steam & Saunas
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    Fountain & WaterFall
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="fountainnozzel.html" class="nav-link">
+                                            Fountain Nozzel
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="fountainwaterbody.html" class="nav-link">
+                                            Fountain Water Body 
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="lightingwork.html" class="nav-link">
+                                            Lightning Work
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="FRP.html" class="nav-link">
+                                    FRP Services
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="otherservices.html" class="nav-link ">
+                                    Other Services
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="filteration.html" class="nav-link">
+                                            Filtration Services
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="illum.html" class="nav-link">
+                                            Illumination Service
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="jaccuzi.html" class="nav-link">
+                                            Jaccuzi Construction 
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="railing.html" class="nav-link">
+                                            Railing Services 
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="product.html" class="nav-link active">
+                                    Product
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="AMC.html" class="nav-link">
+                                    AMC
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="gallery.html" class="nav-link">
+                                    Gallery
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- End Navbar Area -->
+
+        <!-- Start Sidebar Modal -->
+		<div class="sidebar-modal">  
+			<div class="modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-bs-labelledby="myModalLabel2">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-bs-dismiss="modal" aria-bs-label="Close">
+								<span aria-bs-hidden="true">
+									<i class="bx bx-x"></i>
+								</span>
+							</button>
+							<h2 class="modal-title" id="myModalLabel2">
+								<a href="index.html">
+									<img src="assets/img/logo.png" alt="Logo">
+								</a>
+							</h2>
+                        </div>
+                        
+						<div class="modal-body">
+							<div class="sidebar-modal-widget">
+								<h3 class="title">About Us</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, asperiores doloribus eum laboriosam praesentium delectus unde magni aut perspiciatis cumque deserunt dolore voluptate, autem pariatur.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, asperiores doloribus eum laboriosam praesentium delectus unde magni aut perspiciatis cumque deserunt dolore voluptate, autem pariatur.</p>
+							</div>
+							<div class="sidebar-modal-widget">
+								<h3 class="title">Blogs</h3>
+								<div class="modal-widget-blog">
+                                    <ul>
+                                        <li>
+                                            <a href="blog-details.html">
+                                                <img src="assets/img/blog/1.jpg" alt="Blog Images">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="blog-details.html">
+                                                <img src="assets/img/blog/2.jpg" alt="Blog Images">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="blog-details.html">
+                                                <img src="assets/img/blog/3.jpg" alt="Blog Images">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="blog-details.html">
+                                                <img src="assets/img/blog/1.jpg" alt="Blog Images">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="blog-details.html">
+                                                <img src="assets/img/blog/2.jpg" alt="Blog Images">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="blog-details.html">
+                                                <img src="assets/img/blog/3.jpg" alt="Blog Images">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="blog-details.html">
+                                                <img src="assets/img/blog/1.jpg" alt="Blog Images">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="blog-details.html">
+                                                <img src="assets/img/blog/2.jpg" alt="Blog Images">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+							<div class="sidebar-modal-widget">
+								<h3 class="title">Connect With Us</h3>
+								<ul class="social-list">
+									<li>
+										<a href="#">
+											<i class="bx bxl-facebook"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="bx bxl-twitter"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class='bx bxl-youtube'></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class='bx bxl-instagram'></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        <!-- End Sidebar Modal -->
+
+        <!-- Inner Banner -->
+        <div class="inner-banner inner-bg7">
+            <div class="container">
+                <div class="inner-title text-center">
+                    <h3>OUR ALL LATEST PRODUCTS</h3>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <i class='bx bx-chevron-right'></i>
+                        </li>
+                        <li>SHOP</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Inner Banner End -->
+
+
+        <!-- 🔹 Heading -->
+        <h2 class="text-center mb-3">Our Products</h2>
+
+        <!-- 🔹 Introduction -->
+        <p class="text-center text-muted mb-5">
+            We offer high-quality products for building and beautifying your swimming pools, fountains, and spas.
+        </p>
+
+  
+        <!-- Product Area -->
+        <div class="product-area pt-100 pb-70">
+            <div class="container">
+                <div class="section-title text-center">
+                    <span>SHOP</span>
+                    <h2 class="margin-auto color-title-blue">Our All Latest Equipments</h2>
+                </div>
+                <div class="row pt-45">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-product">
+                            <img src="products/safety jacket.jpg" alt="Image" style="height: 300px;">
+                            <div class="product-content">
+                               
+    
+                                <a href="cart.html">
+                                    <h3>                                    
+                                        <li>safety life jacket</li>
+                                    </h3>
+                                </a>
+    
+                                <a href="cart.html" class="default-btn default-bg-black product-btn">
+                                    <i class='bx bx-cart'></i>
+                                    Add To cart
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-product">
+                            <img src="products/Swimming pool hose.jpg" alt="Image" style="height: 300px;">
+                            <div class="product-content">
+                                
+    
+                                <a href="cart.html">
+                                    <h3>Swimming pool hose</h3>
+                                </a>
+    
+                                <a href="cart.html" class="default-btn default-bg-black product-btn">
+                                    <i class='bx bx-cart'></i>
+                                    Add To cart
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-product">
+                            <img src="products/Floor Brush.jpg" alt="Image" style="height: 300px;">
+                            <div class="product-content">
+                                
+    
+                                <a href="cart.html">
+                                    <h3> Floor Brush</h3>
+                                </a>
+    
+                                <a href="cart.html" class="default-btn default-bg-black product-btn">
+                                    <i class='bx bx-cart'></i>
+                                    Add To cart
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-product">
+                            <img src="products/Pool Vacuume.jpg" alt="Image" style="height: 300px;">
+                            <div class="product-content">
+                                
+    
+                                <a href="cart.html">
+                                    <h3>Pool Vacuume</h3>
+                                </a>
+    
+                                <a href="cart.html" class="default-btn default-bg-black product-btn">
+                                    <i class='bx bx-cart'></i>
+                                    Add To cart
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-product">
+                            <img src="products/Floor Wiper.webp" alt="Image" style="height: 300px;">
+                            <div class="product-content">
+                                
+                                <a href="cart.html">
+                                    <h3>Floor Wiper</h3>
+                                </a>
+    
+                                <a href="cart.html" class="default-btn default-bg-black product-btn">
+                                    <i class='bx bx-cart'></i>
+                                    Add To cart
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-product">
+                            <img src="assets/img/shop/6.jpg" alt="Image" style="height: 300px;">
+                            <div class="product-content">
+                               
+                                <a href="cart.html">
+                                    <h3> Automated Pool Cleaner</h3>
+                                </a>
+    
+                                <a href="cart.html" class="default-btn default-bg-black product-btn">
+                                    <i class='bx bx-cart'></i>
+                                    Add To cart
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-product">
+                            <img src="products/powerwashing.jpg" alt="Image" style="height: 300px;">
+                            <div class="product-content">
+                               
+                                <a href="cart.html">
+                                    <h3>Pressure washing</h3>
+                                </a>
+    
+                                <a href="cart.html" class="default-btn default-bg-black product-btn">
+                                    <i class='bx bx-cart'></i>
+                                    Add To cart
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-product">
+                            <img src="assets/img/shop/8.jpg" alt="Image" style="height: 300px;">
+                            <div class="product-content">
+                               
+                                <a href="cart.html">
+                                    <h3>Pool Chemicals</h3>
+                                </a>
+    
+                                <a href="cart.html" class="default-btn default-bg-black product-btn">
+                                    <i class='bx bx-cart'></i>
+                                    Add To cart
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 offset-sm-3 offset-lg-0">
+                        <div class="single-product">
+                            <img src="assets/img/shop/9.jpg" alt="Image" style="height: 300px;">
+                            <div class="product-content">
+                                
+                                <a href="cart.html">
+                                    <h3>Pool Cleaning net</h3>
+                                </a>
+    
+                                <a href="cart.html" class="default-btn default-bg-black product-btn">
+                                    <i class='bx bx-cart'></i>
+                                    Add To cart
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Product Area End -->
+        
+        <!-- 🔹 Why Choose Us? Split Layout -->
+        <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; margin-top: 50px; padding: 30px; background-color: #f0f8ff; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+
+            <!-- Left Side: Info -->
+            <div style="flex: 1; min-width: 300px; padding-right: 20px;">
+                <h4 >Why Choose <span style="color: #000;">Dream Pools?</span></h4>
+                <ul style="list-style: none; padding: 0; font-size: 18px; line-height: 1.8; color: #333;">
+                <li style="margin-bottom: 10px;">
+                    ✅ <strong>Quality Assured:</strong> Premium-grade materials and strict quality checks.
+                </li>
+                <li style="margin-bottom: 10px;">
+                    ✅ <strong>Long-lasting Material:</strong> Built to withstand wear and tear.
+                </li>
+                <li style="margin-bottom: 10px;">
+                    ✅ <strong>Trusted by 100+ Clients:</strong> Trusted by pool owners and resorts.
+                </li>
+                </ul>
+            </div>
+
+            <!-- Right Side: Image -->
+            <div style="flex: 1; min-width: 300px; text-align: center;"  class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="1s">
+                <img src="products/pic12.jpg" alt="Dream Pools" style="width: 100%; max-width: 400px; height: 200px; border-radius: 10px;">
+            </div>
+
+        </div>
+            <br><br><br>
+
+        <!-- Footer Area -->
+        <footer class="footer-area-two">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 330">
+                <path fill="#fff" fill-opacity="1" d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,117.3C672,117,768,203,864,202.7C960,203,1056,117,1152,117.3C1248,117,1344,203,1392,245.3L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+            </svg> 
+            <div class="container" style="margin-top: -300px;">
+                <div class="newsleter-section-two">
+                    <div class="row align-items-center">
+                        <div class="col-lg-7 pe-0">
+                            <div class="newsleter-area">
+                                <h2>Don't Miss Our Update Use This Subscription</h2>
+                                <form class="newsletter-form" data-toggle="validator" method="POST">
+                                    <input type="email" class="form-control" placeholder="Enter Your Email" name="EMAIL" required autocomplete="off">
+                                    <button class="subscribe-btn" type="submit">
+                                        SUBSCRIBE NOW
+                                    </button>
+                                    <div id="validator-newsletter" class="form-result"></div>
+                                </form>
+                            </div>
+                        </div>
+    
+                        <div class="col-lg-5 ps-0">
+                            <div class="newsleter-right newsleter-bg">
+                                <h3>RAHI CLASSIC BUILDING, FLAT NO 06. GOKUL NAGAR, DHANORI, PUNE-411015</h3>
+                                <a href="tel:+4(654)1234567432">+4 (654) 123 456 7432</a>
+                                <div class="newsleter-right-icon">
+                                    <i class='bx bx-phone-call' ></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-middle-two ">     
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6 col-md-4">
+                            <div class="footer-list">
+                                <h3>Pages</h3>
+                                <ul>
+                                    <li>
+                                        <i class='bx bx-plus' ></i>
+                                        <a href="index.html">HOME</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-plus' ></i>
+                                        <a href="about.html">ABOUT US</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-plus' ></i>
+                                        <a href="steam.html">Steam & Saunas</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-plus' ></i>
+                                        <a href="product.html">Product</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-plus' ></i>
+                                        <a href="AMC.html">AMC</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-plus' ></i>
+                                        <a href="gallery.html">Gallery</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-plus' ></i>
+                                        <a href="contact.html">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 col-md-4">
+                            <div class="footer-list">
+                                <h3>SERVICES</h3>
+                                <ul>
+                                    <li>
+                                        <i class='bx bx-plus' ></i>
+                                        <a href="RCC.html">RCC Services</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-plus' ></i>
+                                        <a href="FERO.html">FERO Services</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-plus' ></i>
+                                        <a href="FRP.html">FRP Services</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-plus' ></i>
+                                        <a href="filteration.html">Filtration Services</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-plus' ></i>
+                                        <a href="illum.html">Illumination Service</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-plus' ></i>
+                                        <a href="jaccuzi.html">Jaccuzi Construction</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-plus' ></i>
+                                        <a href="railing.html">Railing Services</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 col-md-4">
+                            <div class="footer-top-card">
+                                <i class="flaticon-padlock"></i>
+                                <span>Sunday:</span>
+                                <h3>Closed</h3>
+                            </div>
+
+                            <div class="footer-top-card">
+                                <i class="flaticon-alarm-clock"></i>
+                                <span>Saturday:</span>
+                                <h3>09:00AM - 07:00PM</h3>
+                            </div>
+
+                            <div class="footer-top-card">
+                                <i class="flaticon-calendar"></i>
+                                <span>Monday - Friday:</span>
+                                <h3>09:00AM - 09:00PM</h3>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="footer-gallery">
+                                <h3>Gallery</h3>
+                                <ul>
+                                    <li>
+                                        <a href="gallery.html">
+                                            <img src="assets/imgs/FERO1.png" alt="image">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="gallery.html">
+                                            <img src="assets/imgs/FRP3.jpg" alt="image">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="gallery.html">
+                                            <img src="assets/imgs/RCC1.jpg" alt="image">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="gallery.html">
+                                            <img src="assets/imgs/FERO3.jpg" alt="image">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="gallery.html">
+                                            <img src="assets/imgs/FRP2.png" alt="image">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="gallery.html">
+                                            <img src="assets/imgs/RCC3.png" alt="image">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="gallery.html">
+                                            <img src="assets/imgs/FERO5.jpg" alt="image">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="gallery.html">
+                                            <img src="assets/imgs/RCC4.png" alt="image">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="gallery.html">
+                                            <img src="assets/imgs/FRP4.jpg" alt="image">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4">
+                            <div class="bottom-social-link">
+                                <ul>
+                                    <li>
+                                        <a class="color-blue" href="#" target="_blank">
+                                            <i class='bx bxl-facebook'></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a  class="active" href="#" target="_blank">
+                                            <i class='bx bxl-twitter'></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="color-pink" href="#" target="_blank">
+                                            <i class='bx bxl-instagram'></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="color-red" href="#" target="_blank">
+                                            <i class='bx bxl-pinterest-alt'></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="color-dark-red" href="#" target="_blank">
+                                            <i class='bx bxl-youtube'></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-8 col-md-8">
+                            <div class="bottom-text">
+                                <p>
+                                    Copyright Dreams Pools. All Rights Reserved by 
+                                    <a href="https://hibootstrap.com/" target="_blank">HiBootstrap</a> 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Area End -->
+
+         <!-- Jquery Min JS -->
+        <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery.min.js"></script>
+        <!-- Bootstrap Bundle JS -->
+        <script src="assets/js/bootstrap.bundle.js"></script>
+        <!-- Owl Carousel JS -->
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <!-- Wow Min JS -->
+        <script src="assets/js/wow.min.js"></script>
+        <!-- Meanmenu JS -->
+        <script src="assets/js/meanmenu.js"></script>
+        <!-- Magnific Popup JS -->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!-- Nice Select JS -->
+        <script src="assets/js/jquery.nice-select.min.js"></script>
+        <!-- Ajaxchimp Min JS -->
+        <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+        <!-- Form Validator Min JS -->
+        <script src="assets/js/form-validator.min.js"></script>
+        <!-- Contact Form JS -->
+        <script src="assets/js/contact-form-script.js"></script>
+        <!-- Custom JS -->
+        <script src="assets/js/custom.js"></script>
+
+         <script type="text/javascript" src="wow.js"></script>
+<script>
+              new WOW().init();
+        </script>
+        
+         <script src="assets/js/wow.min.js"></script>
+    <script> new WOW().init(); </script>
+    </body>
+
+<!-- Mirrored from templates.hibootstrap.com/pizi/default/shop.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Aug 2025 10:57:12 GMT -->
+</html>
